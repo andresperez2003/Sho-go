@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="diseño.css">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <title>Alizza</title>
+</head>
+
+<body>
+  <div class="inicio">
+    <nav class="nav">
+      <div class="navegador">
+        <ul class="list">
+          <img class="img" src="logo5.png">
+          <li class="sub_list"> <a class="enlace" href="#sobremi">Sobre nosotros</a> </li>
+          <li class="sub_list"> <a class="enlace" href="#lenguajes">Contactenos</a> </li>
+          <li class="sub_list"> <a class="enlace" href="#estudios">Creadores</a> </li>
+        </ul>
+      </div>
+    </nav>
+    <h1 class="alizza">Alizza</h1>
+    <h2 class="sho_go">Sho go</h2>
+  </div>
+  <div class="formulario_1">
+    <div>
+      <img src="crisantemo.png" width="5%" alt="">
+    </div>
+    <div class="formulario_2">
+      <h1>Control de correspondencia</h1>
+      <h2>Datos de Destinatario (Salida) o Remitente (Entrada) </h2>
+      <div class="formulario">
+        <img src="mail.png" width="25%" alt="">
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="shadow-lg p-3 mb-5 mt-4 bg-body rounded">
+              <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-3 position-relative">
+                  <label for="Id" class="form-label">ID de Usuario</label>
+                  <input id="Id" name="Id" type="text" class="form-control" required>
+                  <!--"valid-feedback"-->
+                  <div class="valid-tooltip">Campo ok</div>
+                  <div class="invalid-tooltip">Complete los datos</div>
+                </div>
+                <div class="col-md-3 position-relative">
+                  <label for="Nombre_RazonSocial" class="form-label">Razon Social</label>
+                  <input id="Nombre_RazonSocial" name="Nombre_RazonSocial" type="text" class="form-control" required>
+                  <!--"valid-feedback"-->
+                  <div class="valid-tooltip">Campo ok</div>
+                  <div class="invalid-tooltip">Complete los datos</div>
+                </div>
+                <div class="col-md-4 position-relative">
+                  <label for="Direccion" class="form-label">Dirección</label>
+                  <input id="Direccion" name="Direccion" type="text" class="form-control" required>
+                  <div class="valid-tooltip">Campo ok</div>
+                  <div class="invalid-tooltip">Complete los datos</div>
+                </div>
+                <div class="col-md-4 position-relative">
+                  <label for="Ciudad" class="form-label">Ciudad</label>
+                  <input id="Ciudad" name="Ciudad" type="text" class="form-control" required>
+                  <div class="valid-tooltip">Campo ok</div>
+                  <div class="invalid-tooltip">Complete los datos</div>
+                </div>
+                <div class="col-md-4 position-relative">
+                  <label for="Departamento" class="form-label">Departamento</label>
+                  <input id="Departamento" name="Departamento" type="text" class="form-control" required>
+                  <div class="valid-tooltip">Campo ok</div>
+                  <div class="invalid-tooltip">Complete los datos</div>
+                </div>
+                <!--<div class="col-md-3 position-relative">
+                                  <label for="pais">País</label>
+                                  <select name="pais" id="pais" class="form-select" required>
+                                      <option selected disabled value="">Seleccione..</option>
+                                      <option value="">México</option>
+                                      <option value="">Colombia</option>
+                                      <option value="">Perú</option>
+                                      <option value="">Ecuador</option>
+                                      <option value="">Pánama</option>
+                                  </select>
+                                  <div class="valid-tooltip">Campo ok</div>
+                                  <div class="invalid-tooltip">Complete los datos</div>
+                              </div>-->
+                <button type="submit" class="btn btn-warning fw-bold">Guardar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!--Ingresamos el código de validación...-->
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+      'use strict'
+
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.querySelectorAll('.needs-validation')
+
+      // Loop over them and prevent submission
+      Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+          form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            } else {
+              alert("DATOS VALIDADOS.")
+            }
+
+            form.classList.add('was-validated')
+          }, false)
+        })
+    })()
+
+  </script>
+</body>
+
+</html>
